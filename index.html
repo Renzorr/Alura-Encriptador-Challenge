@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Alura Encriptador de Textos Challenge" />
+    <meta
+      name="description"
+      content="Presento aquí mi desafío del Encriptador de Textos por parte de  Alura: ¡Descúbrelo aquí!"
+    />
+    <meta name="keywords" content="Encriptador, Alura, Challenge, Desafío" />
+    <meta name="author" content="Renzo Benavente" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Encriptador Challenge</title>
+  </head>
+  <body>
+    <header class="container">
+      <a href="#"><img src="./assets/logo.svg" alt="alura logo" /></a>
+    </header>
+    <section class="encryptor-section container">
+      <section class="input-section">
+        <label for="input" class="sr-only">Introduzca texto aquí</label>
+        <textarea
+          class="input-area"
+          id="input"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <aside class="input-section-bottom">
+          <span class="input-section-warning"
+            ><img src="./assets/alert-icon.svg" alt="" aria-hidden="true" />Solo
+            letras minúsculas y sin acentos</span
+          >
+          <div class="btn-area">
+            <button
+              class="btn btn-primary btn-encriptar"
+              aria-label="Encriptar Texto"
+            >
+              Encriptar
+            </button>
+            <button
+              class="btn btn-secondary btn-desencriptar"
+              aria-label="Desencriptar Texto"
+            >
+              Desencriptar
+            </button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="result-section">
+        <label for="result" class="sr-only">Resultado de la operación</label>
+        <textarea
+          class="result-area"
+          id="result"
+          readonly="readonly"
+        ></textarea>
+        <article class="result-no-content">
+          <img src="./assets/illustration.svg" alt="No content illustration" />
+          <h2>Ningún mensaje fue encontrado</h2>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </article>
+        <button class="btn btn-primary btn-copy" aria-label="Copiar Texto">
+          Copiar
+        </button>
+      </section>
+    </section>
+
+    <span class="warning">Ingrese datos correctos</span>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
