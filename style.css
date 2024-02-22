@@ -177,7 +177,7 @@ header {
 .warning {
   position: absolute;
   top: 50px;
-  right: -105px;
+  right: 5px;
   font-size: 14px;
   color: var(--white);
   background-color: var(--dark-blue);
@@ -188,7 +188,6 @@ header {
 
 .warning.active {
   opacity: 1;
-  right: 10px;
 }
 
 /* Media Queries */
